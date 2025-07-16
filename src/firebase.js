@@ -4,15 +4,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, RecaptchaVerifier } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// ✅ Your Firebase Config
+// ✅ Firebase Config from .env
 const firebaseConfig = {
-  apiKey: "AIzaSyAYJqprk7BNh6lel3oxAZOeeig1WlVIpCI",
-  authDomain: "hotel-2b029.firebaseapp.com",
-  projectId: "hotel-2b029",
-  storageBucket: "hotel-2b029.appspot.com",
-  messagingSenderId: "1063161368835",
-  appId: "1:1063161368835:web:b2936d1994d5cf466b1936",
-  measurementId: "G-P78MJ5J6W5"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // ✅ Initialize Firebase
