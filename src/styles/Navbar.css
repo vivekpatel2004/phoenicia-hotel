@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+ 
+  font-family: 'Crimson Text', serif;
+}
+
+/* === Main Navbar Wrapper === */
+.navbar-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar-wrapper.hide {
+  transform: translateY(-100%);
+}
+.navbar-wrapper.show {
+  transform: translateY(0%);
+}
+
+/* === Responsive Container for 1920px === */
+.navbar-top,
+.navbar-bottom {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === Top Section === */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* === Logo === */
+.nav-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.year {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  color: #C8C8C8;
+}
+.logo-circle {
+  width: 74px;
+  height: 74px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: -0.06em;
+}
+.stars {
+  display: flex;
+  gap: 4px;
+}
+.star-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C8C8C8;
+}
+
+/* === Nav Icons === */
+.nav-icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-icon-button:hover {
+  border-bottom: 2px solid white;
+}
+
+/* === Bottom Nav === */
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* === Mobile Responsive === */
+@media screen and (max-width: 768px) {
+  .navbar-top {
+    padding: 10px 16px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    justify-content: center;
+  }
+  .logo-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .year, .stars {
+    display: none;
+  }
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .logo-text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,16 @@
+/* src/styles/Dashboard.css */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f1f5f9; /* light background for content */
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+  overflow-y: auto;
+  min-height: 100vh;
+}

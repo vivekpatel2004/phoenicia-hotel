@@ -1,0 +1,280 @@
+/* === StayPackages.css === */
+
+.stay-packages-section {
+  width: 100%;
+  max-width: 1920px;
+  background: #FEFBF9;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 60px 20px 120px;
+}
+
+.section-heading {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2E2E2E;
+}
+
+.package-scroll {
+  overflow-x: auto;
+  position: relative;
+  padding-bottom: 60px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  min-height: 400px;
+}
+
+.package-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.package-track {
+  display: flex;
+  gap: 40px;
+  padding: 0 40px; /* ✅ Equal 40px on both left and right */
+  width: max-content;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+}
+
+.package-card {
+  scroll-snap-align: start;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  border: 0.8px solid #B0ACAC;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #000;
+  flex: 0 0 auto;
+}
+
+.package-white-border {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 710px;
+  height: 510px;
+  border: 1px solid white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.package-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.package-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.all-season {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.package-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.package-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #D5D5D5;
+  margin: 0;
+}
+
+.package-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0.6px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  border: 0.6px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-mail {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.rectangle8 {
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 5px;
+  border: 1.6px solid #FFFFFF;
+  border-radius: 1px;
+}
+
+.rectangle12 {
+  position: absolute;
+  width: 6px;
+  height: 7px;
+  left: 7px;
+  top: 2px;
+  border: 1.6px solid #FFFFFF;
+  border-radius: 1px;
+}
+
+.rectangle13 {
+  position: absolute;
+  width: 11px;
+  height: 4.5px;
+  left: 4px;
+  top: 10px;
+  background: #D9D9D9;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-indicator-line {
+  width: calc(100% - 80px); /* ✅ 40px left + 40px right */
+  margin: 0 auto;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  right: 40px;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .package-card {
+    width: 90vw;
+    height: 450px;
+  }
+
+  .package-white-border {
+    width: calc(90vw + 20px);
+    height: 470px;
+    left: -10px;
+    top: -10px;
+  }
+
+  .package-title {
+    font-size: 24px;
+  }
+
+  .package-subtitle {
+    font-size: 12px;
+  }
+
+  .package-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-mail {
+    transform: scale(0.85);
+  }
+
+  .scroll-indicator-line {
+    bottom: 30px;
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .package-card {
+    width: 90vw;
+    height: 400px;
+  }
+
+  .package-white-border {
+    width: calc(90vw + 20px);
+    height: 420px;
+    left: -10px;
+    top: -10px;
+  }
+
+  .package-title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .package-subtitle {
+    font-size: 11px;
+  }
+
+  .package-button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .icon-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-mail {
+    transform: scale(0.75);
+  }
+
+  .scroll-indicator-line {
+    bottom: 30px;
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+}

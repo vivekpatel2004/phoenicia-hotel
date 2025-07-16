@@ -1,0 +1,77 @@
+.admin-panel {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background: #001f3f;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff33;
+  padding-bottom: 10px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.admin-sidebar li:hover,
+.admin-sidebar li.active {
+  color: #00bcd4;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  background: #f4f4f4;
+  overflow-y: auto;
+}
+
+.admin-main h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.user-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 500px;
+}
+
+.user-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.user-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.loading {
+  font-style: italic;
+  color: gray;
+}

@@ -1,0 +1,13 @@
+/* Place this at very top of FacilitySlider.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;  /* only horizontal scroll disable */
+  overflow-y: auto;    /* allow vertical scrolling */
+  scroll-behavior: smooth;
+}

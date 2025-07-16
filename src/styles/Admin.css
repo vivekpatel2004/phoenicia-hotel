@@ -1,0 +1,37 @@
+/* Admin Panel Container */
+.admin-container {
+  padding: 2rem;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.admin-container p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Bookings List */
+.admin-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-container li {
+  background-color: #fff;
+  border-left: 5px solid #007bff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container li strong {
+  color: #34495e;
+}

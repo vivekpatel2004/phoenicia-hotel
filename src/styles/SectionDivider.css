@@ -1,0 +1,18 @@
+/* SectionDivider.css */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.center-roman-symbol {
+  font-family: 'Crimson Text', serif;
+  font-size: 32px;
+  color: #979797;
+  border: 2px solid #ccc;
+  padding: 14px 24px;
+  text-align: center;
+}
