@@ -3,6 +3,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, RecaptchaVerifier } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import.meta.env
 
 // ✅ Firebase Config from .env
 const firebaseConfig = {
