@@ -20,7 +20,7 @@ export default function Navbar() {
   const handleBookingClick = () => {
     const user = localStorage.getItem("user");
     if (user) {
-      navigate("/booking");
+      navigate("/dashboard");
     } else {
       navigate("/login");
     }
